@@ -423,6 +423,9 @@ if (NGAGE)
   set(SDL_VIRTUAL_JOYSTICK OFF)
 endif()
 
+set(SDL_STATIC ON)
+set(SDL_SHARED OFF)
+
 if(NOT (SDL_SHARED OR SDL_STATIC))
   message(FATAL_ERROR "SDL_SHARED and SDL_STATIC cannot both be disabled")
 endif()
